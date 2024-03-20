@@ -1,18 +1,17 @@
 import { useParams } from "react-router-dom";
 import { eventList } from "../../utils/EventDatabase";
 import Navigation from "../../components/Navigation/Navigation";
-import { MdCalendarMonth } from "react-icons/md";
-import { IoLocationSharp } from "react-icons/io5";
+import {MdCalendarMonth} from "react-icons/md";
+import {IoLocationSharp} from "react-icons/io5"
 import "./EventDetails.css";
-const EventDetails = () => {
-  const { id } = useParams();
-  const numId = Number(id);
+const EventDetails = ()=>{
+  const {id}=useParams()
+  const numId = Number(id)
 
   const filteredEvent = eventList.find(
-    (eventDetail) => eventDetail.id === numId
-  );
+    eventDetail=>eventDetail.id===numId)
 
-  return (
+  return(
     <div className="event-details-container">
       <Navigation />
       <div className="event-details-wrapper">
@@ -41,6 +40,6 @@ const EventDetails = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 export default EventDetails;

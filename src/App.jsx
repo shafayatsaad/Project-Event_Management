@@ -1,22 +1,14 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import EventDetail from "./pages/EventDetails/EventDetails";
-import FilterEvents from "./pages/FilterEvents/FilterEvents";
-import EventList from "./pages/EventList/EventList";
+import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import {routes} from "./routes/routes"
+import "./App.css"
 
-import "./App.css";
-
-const router = createBrowserRouter([
-  { path: "/", element: <EventList /> },
-  { path: "/find-events", element: <FilterEvents /> },
-  { path: "/events/:id", element: <EventDetail /> },
-]);
-
+const router = createBrowserRouter(routes)
 function App() {
   return (
     <>
-      <RouterProvider router={router}></RouterProvider>
+      <RouterProvider router={router}/>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
