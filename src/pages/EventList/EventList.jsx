@@ -19,7 +19,7 @@ const EventList = () => {
   };
   return (
     <div>
-      <Navigation />
+      <Navigation/>
       <div className="event-list-wrapper">
         <div className="event-list">
           {eventList.length > 0 ? (
