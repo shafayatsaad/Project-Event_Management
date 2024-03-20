@@ -16,31 +16,3 @@
     width: 280px;
     border-radius: 14px;
   }
-  .card .card-content {
-    width: 230px;
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .card .card-content h3 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: rgb(43, 50, 43);
-  
-    font-weight: 600;
-    margin-bottom: 40px;
-  }
-  .card .card-content p {
-    font-size: 18px;
-  
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 18px;
-  }
-  .card .card-content p span {
-    font-size: 16px;
-  }
